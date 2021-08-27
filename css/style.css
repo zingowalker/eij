@@ -146,7 +146,20 @@ img {
 }
 
 .flex-items > div {
-  padding: 20px;
+  padding: 50px;
+}
+
+hr {
+    border: 0;
+    height: 0; 
+    box-shadow: 0 0 1px 1px #14716a; 
+    /* width: 90%; */
+}
+.flex-items a:hover{
+  cursor: pointer;
+  background: #14716a;
+  color: #fff;
+  opacity: 0.9;
 }
 
 /* Section Heading */
