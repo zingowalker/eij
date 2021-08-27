@@ -332,11 +332,13 @@ hr {
   .hero .content h1 {
     font-size: 35px;
   }
-
   .hero .content p {
     font-size: 15px;
   }
-
+  .navbar ul li a {
+    font-size: 15px;
+    padding: 5px;
+  }
   .cases .section-header h2 {
     font-size: 20px;
   }
@@ -344,10 +346,14 @@ hr {
   .team img {
     width: 50%;
     height: 50%;
-    border-radius: 5px;
-    box-shadow: 3px 3px 5px #333;
+    border-radius: 100%;
+    box-shadow: 1px 1px 5px #333;
   }
   .team h2 {
     font-size: 25px;
+  }
+
+  hr {
+    border-bottom: #14716a 1px solid;
   }
 }
