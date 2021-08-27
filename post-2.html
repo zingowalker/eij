@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrer policy="no-referrer" />
+  <link rel="stylesheet" href="./css/utilities.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Post Two</title>
+</head>
+
+<body id="home">
+  <header class="hero blog">
+    <div id="navbar" class="navbar top">
+      <h1 class="logo">
+        <span class="text-primary"></span><a href="index.html"><img src="./img/EIJ_Trek_logo.png" alt=""></a>
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#service">Service</a></li>
+          <li><a href="blog.html#blog">Blog</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="content">
+      <h1>Post Two</h1>
+    </div>
+  </header>
+
+  <main>
+    <section class="post">
+      <h2>Blog Post Two</h2>
+      <p class="meta">
+        <i class="fas fa-user"></i>Posted by <strong>Jesse Tamchos</strong> | September 22 2021
+      </p>
+      <img src="./img/blog2.jpg" alt="">
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis cupiditate laboriosam
+        quisquam saepe, tempora officia laborum animi deserunt quibusdam id deleniti fugiat
+        accusantium. Esse, eveniet!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia aperiam sequi error illum animi alias
+        consequatur voluptatum quaerat nisi. Quo veniam assumenda cupiditate recusandae, error nisi beatae, rem eaque
+        deserunt officiis dolor! Ullam soluta est error suscipit corporis inventore, libero provident aspernatur esse
+        saepe repudiandae odio neque voluptatum expedita, blanditiis consectetur in excepturi deleniti vel. Id molestias
+        quibusdam est neque?</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore sint ad ducimus dolorum distinctio repudiandae
+        quasi fuga sed aut eligendi nobis sunt reiciendis nemo, aspernatur maxime praesentium voluptatibus iste autem
+        illum cupiditate quisquam quia fugit dolorem mollitia. Quibusdam vitae officiis suscipit. Harum beatae maxime
+        deleniti eum minus nihil molestiae totam.</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer bg-dark">
+    <div class="social">
+      <a href="https://www.facebook.com/voyageecoindia"><i class="fab fa-facebook fa-2x"></i></a>
+      <a href="https://www.instagram.com/ecoindiajourneys/"><i class="fab fa-instagram fa-2x"></i></a>
+      <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+    </div>
+    <p>Copyright &copy; 2021 Eco India Journeys</p>
+  </footer>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    let scrolled = false;
+
+    window.onscroll = function () {
+      if (window.pageYOffset > 100) {
+        navbar.classList.remove('top');
+        if (!scrolled) {
+          navbar.style.transform = 'translateY(-70px)';
+        }
+        setTimeout(function () {
+          navbar.style.transform = 'translateY(0)';
+          scrolled = true;
+        }, 200);
+      } else {
+        navbar.classList.add('top');
+        scrolled = false;
+      }
+    };
+  </script>
+</body>
+
+</html>
