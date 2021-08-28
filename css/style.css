@@ -34,6 +34,14 @@ p {
 img {
   width: 100%;
 }
+hr {
+  border: dotted #14716a 4px;
+  border-bottom: none;
+  width: 40%;
+  margin: 20px auto;
+  
+  /* width: 90%; */
+}
 
 /* Navbar */
 .navbar {
@@ -146,15 +154,10 @@ img {
 }
 
 .flex-items > div {
-  padding: 50px;
+  padding: 20px;
+  width: 100%;
 }
 
-hr {
-    border: 0;
-    height: 0; 
-    box-shadow: 0 0 1px 1px #14716a; 
-    /* width: 90%; */
-}
 .flex-items a:hover{
   cursor: pointer;
   background: #14716a;
@@ -354,6 +357,9 @@ hr {
   }
 
   hr {
-    border-bottom: #14716a 1px solid;
+    border: dotted #14716a 4px;
+    border-bottom: none;
+    width: 10%;
+    margin: 20px auto;
   }
 }
